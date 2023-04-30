@@ -1,5 +1,22 @@
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import HomePage from './app/container/HomePage';
+
+const AppContainer = styled.div`
+	${tw`
+    flex
+    flex-col
+    w-full
+    h-full 
+  `}
+`;
+
 function App() {
-	return <div className="bg-red-900">Hello world</div>;
+	return (
+		<AppContainer>
+			<HomePage />
+		</AppContainer>
+	);
 }
 
 export default App;
